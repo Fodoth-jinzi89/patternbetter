@@ -48,7 +48,7 @@ public abstract class VerticalButtonBarMixin implements ICompositeWidget {
             guiGraphics.blitSprite(
                     rs,
                     bounds.getX() + this.getBounds().getX() +this.getBounds().getWidth() , // 修改X坐标计算
-                    bounds.getY() + this.getBounds().getY() + (ModList.get().isLoaded("appflux") || ModList.get().isLoaded("expandedae") ? 29 : -1),
+                    bounds.getY() + this.getBounds().getY() + (ModList.get().isLoaded("appflux") || ModList.get().isLoaded("expandedae") ? 29 : -1) + (ModList.get().isLoaded("ae2helpers") ? 30 : 0),
                     1,
                     this.getBounds().getWidth() + 1,
                     this.getBounds().getHeight() + 4);
