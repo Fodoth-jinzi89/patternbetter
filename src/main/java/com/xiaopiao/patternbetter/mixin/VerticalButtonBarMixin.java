@@ -80,7 +80,7 @@ public abstract class VerticalButtonBarMixin implements ICompositeWidget {
 
             if (isRight){
                 button.setX(screenOrigin.getX() + position.getX() - MARGIN - button.getWidth() + getBounds().getWidth());
-                button.setY(screenOrigin.getY() + currentY + (ModList.get().isLoaded("appflux") || ModList.get().isLoaded("expandedae") ? 30 : 0));
+                button.setY(screenOrigin.getY() + currentY + (ModList.get().isLoaded("appflux") || ModList.get().isLoaded("expandedae") ? 30 : 0) + (ModList.get().isLoaded("ae2helpers") ? 30 : 0));
             }else {
                 button.setX(screenOrigin.getX() + position.getX() - MARGIN - button.getWidth());
                 button.setY(screenOrigin.getY() + currentY);
